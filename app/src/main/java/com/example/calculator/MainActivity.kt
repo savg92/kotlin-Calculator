@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             val result = when(operator){
                 "+" -> operand + secondOperand
                 "-" -> operand - secondOperand
-                "*" -> operand * secondOperand
+                "X" -> operand * secondOperand
                 "÷" -> operand / secondOperand
                 else -> secondOperand
             }

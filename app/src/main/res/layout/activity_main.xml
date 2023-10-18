@@ -11,8 +11,8 @@
     <EditText
         android:id="@+id/inputNum"
         android:layout_width="314dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
         android:ems="10"
         android:gravity="end"
         android:hint="@string/hint_number"
@@ -23,10 +23,11 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="0" />
+        tools:text="0"
+        tools:ignore="TextFields" />
 
     <TableLayout
-        android:layout_width="336dp"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:shrinkColumns="*"
@@ -45,24 +46,25 @@
                 android:id="@+id/button_ac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clearCalculation"
                 android:text="@string/button_ac"
-                tools:ignore="ButtonStyle"
-                android:onClick="clearCalculation"/>
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_positve_negative"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/positive_negative"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle"
+                android:onClick="clickPlusMinus"/>
 
             <Button
                 android:id="@+id/button_percentage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clickPercent"
                 android:text="@string/button_percentage"
-                tools:ignore="ButtonStyle"
-                android:onClick="clickPercent"/>
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_division"
@@ -81,8 +83,8 @@
                 android:id="@+id/button_7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_7"
                 android:onClick="clickOperand"
+                android:text="@string/button_7"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -204,9 +206,9 @@
                 android:id="@+id/button_decimal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="clickDot"
                 android:text="@string/button_decimal"
-                tools:ignore="ButtonStyle"
-                android:onClick="clickDot"/>
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_equalTo"
